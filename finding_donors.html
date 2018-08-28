@@ -12646,7 +12646,7 @@ It is a ratio of true positives(words classified as spam, and which are actually
 <ul>
 <li><p>Random Forests can be used to predict which songs a user is likely to listen to based on which songs they've liked/disliked in a given playlist.</p>
 </li>
-<li><p>This model is extremely robust as it reduces the noise and variance of the data by building independent predictors that which are then combined to give a average of the predictions(majority vote). Since this model has many independent predictors it reduces error by reducing variance. Additionally it's easy to determine feature importance to a given prediction, this can then allow for data exclussion to reduce the noise and reduce prediction time.</p>
+<li><p>This model is extremely robust as it reduces the noise and variance of the data by building independent predictors that are then combined to give an average of the predictions(majority vote). Additionally it's easy to determine feature importance to a given prediction allowing for data exclussion to reduce the noise and reduce prediction time.</p>
 </li>
 <li><p>However, since it creates independent predictors the prediction time might be longer</p>
 </li>
@@ -12663,7 +12663,7 @@ Sources
 </li>
 <li><p>Gradient boosting is prone to overfitting.</p>
 </li>
-<li><p>Our dataset is large allowing for multiple sampling rounds to build a strong predictor. We can use large n_estimators values to better predict</p>
+<li><p>Our dataset is large allowing for multiple sampling rounds to build a strong predictor. We can use large n_estimators values to better predict the dependent variable</p>
 </li>
 </ul>
 <p>Sources
@@ -12674,7 +12674,7 @@ PLoS One. 2011; 6(5):e20583.</p>
 <p><strong>Logistic regression.</strong></p>
 <ul>
 <li>Logistic regression can be used to determine which users are most likely to default on their payments allowing insurance agencies to adjust their risk profiles.</li>
-<li>It's very easy to train and has very fast prediction times given fewer features</li>
+<li>It's very easy to train and has very fast prediction times</li>
 <li>Logistic regression cannot be used to solve non-linear problems. Additionally this model is prone to errors if the dataset is not adequately preprossed to remove variables that don't contribute to the dependent variable. </li>
 <li>Logistic regression is great for our dataset we have one outcome is a one binary dependent variable(above or below 50k) 
 <a href="https://www.quora.com/What-are-the-pros-and-cons-of-using-logistic-regression-with-one-binary-outcome-and-several-binary-predictors">https://www.quora.com/What-are-the-pros-and-cons-of-using-logistic-regression-with-one-binary-outcome-and-several-binary-predictors</a></li>
@@ -12911,7 +12911,7 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> I would recommend GradientBoost as it has the highest F score and testing accuracy score compared to the two other models. Although Gradientboost had a higher training time 11.26 on the full dataset compared to Logistic regression which has training time 0.52, gradientboost has a higher f test score compared to logistic regression. Although all the algorithms are suited for this dataset since we value precision in our model's prediction, Gradientbosting stands out as it has the highest accuracy.</p>
+<p><strong>Answer: </strong> I would recommend GradientBoost as it has the highest F score and testing accuracy score compared to the two other models. Although Gradientboost had a higher training time 11.26 on the full dataset compared to Logistic regression which has training time 0.52, gradientboost has a higher f test score compared to logistic regression. Although all the algorithms are suited for this dataset gradient boosting stands out as it has the highest accuracy ensuring highest precision which is desirable in our model of choice.</p>
 
 </div>
 </div>
